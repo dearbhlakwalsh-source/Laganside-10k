@@ -1,0 +1,9 @@
+{
+  "name": "Sub50 — Training & Rehab",
+  "short_name": "Sub50",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B0C0E",
+  "theme_color": "#0B0C0E",
+  "orientation": "portrait"
+}

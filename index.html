@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sub50">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0B0C0E">
+<title>Sub50 — Training & Rehab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.1.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">10K</span>
+        <span class="brand-sub" id="race-countdown">— days to race day</span>
+      </div>
+      <button class="icon-btn" id="settings-btn" aria-label="Settings">
+        <i class="ti ti-dots-vertical"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main content area, populated per tab -->
+  <main id="main-content"></main>
+
+  <!-- Bottom tab nav -->
+  <nav class="tabbar" id="tabbar">
+    <button class="tab-btn active" data-tab="today">
+      <i class="ti ti-sun"></i><span>Today</span>
+    </button>
+    <button class="tab-btn" data-tab="week">
+      <i class="ti ti-calendar-week"></i><span>Week</span>
+    </button>
+    <button class="tab-btn" data-tab="plan">
+      <i class="ti ti-list-details"></i><span>Plan</span>
+    </button>
+    <button class="tab-btn" data-tab="rehab">
+      <i class="ti ti-first-aid-kit"></i><span>Rehab</span>
+    </button>
+    <button class="tab-btn" data-tab="strength">
+      <i class="ti ti-barbell"></i><span>Strength</span>
+    </button>
+    <button class="tab-btn" data-tab="progress">
+      <i class="ti ti-chart-line"></i><span>Progress</span>
+    </button>
+  </nav>
+
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
