@@ -4,10 +4,10 @@
 const CONFIG = {
   raceDate: "2026-09-06",
   raceName: "Sub-50 10K",
-  goalTime: "50:00",
-  goalPace: "8:03/mi",
+  goalTime: "49:00",
+  goalPace: "7:53/mi",
 };
-
+ 
 // ============================================
 // DAILY REHAB (every single day, regardless of session)
 // ============================================
@@ -34,7 +34,7 @@ const DAILY_REHAB = [
     target: "achilles"
   }
 ];
-
+ 
 // ============================================
 // REHAB EXERCISE LIBRARY (reference tab)
 // ============================================
@@ -66,7 +66,7 @@ const REHAB_LIBRARY = {
     redFlags: "See a physio if: pain becomes sharp during running rather than just stiff, you notice swelling or a lump on the tendon, or pain doesn't improve after 2 weeks."
   }
 };
-
+ 
 // ============================================
 // STRENGTH SESSION LIBRARY (reference tab)
 // ============================================
@@ -105,7 +105,7 @@ const STRENGTH_LIBRARY = {
     ]
   }
 };
-
+ 
 // ============================================
 // FUEL NOTES (light touch — performance/recovery only)
 // ============================================
@@ -116,7 +116,7 @@ const FUEL_NOTES = {
   rest: null,
   run: { title: "Recovery fuel", detail: "Easy run — normal eating, no special fuelling needed." }
 };
-
+ 
 // ============================================
 // LEAD-IN DAY (today, before week 14 officially starts Monday)
 // ============================================
@@ -128,7 +128,7 @@ const LEAD_IN_DAY = {
     ], note: "Lead-in day before week 14 starts tomorrow. Good day to do the daily knee/Achilles rehab and nothing else." }
   ]
 };
-
+ 
 // ============================================
 // TRAINING PLAN — Weeks 14-17
 // Each session: { tag, title, items: [{name, detail}], note, warn (bool) }
@@ -333,10 +333,11 @@ const PLAN = [
     ]
   }
 ];
-
+ 
 // Flatten all days for easy lookup by date
 const ALL_DAYS = PLAN.flatMap(w => w.days.map(d => ({ ...d, weekNum: w.weekNum })));
-
+ 
 function findDayByDate(isoDate) {
   return ALL_DAYS.find(d => d.date === isoDate);
 }
+ 
